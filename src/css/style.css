@@ -1,0 +1,12 @@
+/**
+ *style.css
+ *@author Juan Manuel Toscano Reyes
+ */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+nav ul{
+    list-style-type: none;
+}

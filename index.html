@@ -5,14 +5,16 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="jtoscanoreyes.guadalupe@alumnado.fundacionloyola.net">
+        <link rel="stylesheet" href="src/css/style.css">
         <title>Subida de Archivos</title>
     </head>
     <body>
         <h1>Subida de archivos al servidor</h1>
-        <form action="src/php/guardarArchivo.php" enctype="multipart/form-data" method="post">
-            <input type="file" name="fichero">
-            <br />
-            <input type="submit" id="enviar" value="Enviar">
-        </form>
+        <nav>
+            <ul>
+                <li><a href="src/html/subidaArchivos.html">Subir Archivos</a></li>
+                <li><a href="src/php/verFicheros.php">Ver directorio de subida de archivos</a></li>
+            </ul>
+        </nav>
     </body>
 </html>
