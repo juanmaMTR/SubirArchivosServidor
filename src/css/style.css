@@ -7,6 +7,26 @@
     padding: 0;
     font-family: 'Open Sans', sans-serif;
 }
-nav ul{
+body{
+    background-color: #00DBDE;
+    background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
+
+}
+#navegador ul{
     list-style-type: none;
+}
+#navegador li{
+	float: left;
+    line-height: 5.33rem;
+}
+#navegador a{
+	display: block;
+	font-weight: bold;
+	padding: 0px 0.9rem;
+	text-decoration: none;
+	color: white;
+	transition: all 500ms ease;
+}
+#navegador a:hover{
+	background-color: #08f7cf;
 }
