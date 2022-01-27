@@ -9,6 +9,8 @@
         <title>Subida de Archivos</title>
     </head>
     <body>
+        <h1>Directorio de Subida</h1>
+        <h4>Haz click en los enlaces de los archivos y los abrirá</h4>
         <?php
             $directorio='../uploads/';
             if(is_dir($directorio)){
@@ -16,7 +18,9 @@
                 while(($archivo=readdir($abrirDirectorio))!== false){
                     //Se muestran todos los archivos y carpetas excepto "." y ".."
                     if ($archivo != "." && $archivo != "..") {
-                        echo $archivo."<br />";
+                        $ruta_abrir_fichero="../uploads/".$archivo;
+                        $ruta_abrir_fichero=str_replace(" ","%20",$ruta_abrir_fichero);
+                        echo '<a href='.$ruta_abrir_fichero.'>'.$archivo."<br />";
                     }
                 }
                 closedir($abrirDirectorio);
